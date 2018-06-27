@@ -43,6 +43,7 @@ int store1,store2,store3,t1,t2,t3;
 
 void setup() {
     // join I2C bus (I2Cdev library doesn't do this automatically)
+    pinMode(13,OUTPUT);
     myservo1.attach(9);
     myservo2.attach(10);
     myservo3.attach(11);
@@ -183,8 +184,8 @@ void loop() {
             t2=90+k2;
             t3=90+k3;
           
-            Serial.print(time);
-            Serial.print(" ");
+            Serial.print(time/1000);
+            Serial.print(": ");
            // Serial.print(store1);
            // Serial.print(" ");
             Serial.print(round(ypr[0] * 180/M_PI));
@@ -205,6 +206,7 @@ void loop() {
         }
        if (time>10000)
        {
+        digitalWrite(13,HIGH);
         myservo1.write(90-k1);
         myservo2.write(90-k2);
         myservo3.write(t3);
