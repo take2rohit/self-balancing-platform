@@ -161,7 +161,7 @@ void loop() {
         fifoCount -= packetSize;
 
        
-        if (time>20000 && time<20100 )
+        if (time>10000 && time<10100 )
         {
           store1 =round(ypr[0] * 180/M_PI);
           store2 =round(ypr[1] * 180/M_PI);
@@ -197,13 +197,13 @@ void loop() {
            // Serial.print(" ");
             Serial.println(round(ypr[2] * 180/M_PI));
         #endif
-        if (time<15000)
+        if (time<5000)
         {
          myservo1.write(90);
          myservo2.write(90);
          myservo3.write(90);
         }
-       if (time>20000)
+       if (time>10000)
        {
         myservo1.write(90-k1);
         myservo2.write(90-k2);
