@@ -67,7 +67,7 @@ void setup() {
 
     Serial.println(F("\nSend any character to begin DMP programming and demo: "));
     while (Serial.available() && Serial.read()); // empty buffer
-    while (!Serial.available());                 // wait for data
+    //while (!Serial.available());                 // wait for data
     while (Serial.available() && Serial.read()); // empty buffer again
 
     // load and configure the DMP
@@ -196,7 +196,6 @@ void loop() {
            // Serial.println(store3);
            // Serial.print(" ");
             Serial.println(round(ypr[2] * 180/M_PI));
-            Serial.println(mpu.getFullScaleGyroRange());
         #endif
         if (time<15000)
         {
