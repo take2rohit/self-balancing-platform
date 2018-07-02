@@ -38,6 +38,8 @@ Nut and Bolts
 ##  DESIGN IN SOLIDWORKS:
 
 The model was designed in Solidworks(2017 version) with proper dimension.
+![screenshot 18](https://user-images.githubusercontent.com/40535193/42186152-17ea18a0-7e69-11e8-83f7-bdf0fcc7b1aa.png)
+
 
 ## ELECTRONIC ASPECT:
 
