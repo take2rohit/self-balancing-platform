@@ -17,11 +17,11 @@ This camera gimbal system replaces many traditional tracking systems such as rad
 **1.  DIMENSIONS:**
     
 
-	Height:
+	Height: 30 cm
 
-	Breadth:
+	Breadth: 13 cm
 
-	Length:
+	Length: 15cm
 
 	Weight:	498 gm
 
